@@ -1,0 +1,34 @@
+h1{
+    color: #2f3e46;
+    text-align: center;
+    font-family: book antiqua;
+    font-size: large;
+    text-decoration: underline wavy #84a98c  ;
+
+}
+li a {
+color:#354f52;
+
+}
+img {
+    width: 400px;
+    height: 500px;
+}
+h2{
+    color:#9e2a2b;
+    background-color:#008000;
+    font-family: fantasy;
+}
+
+button {
+    color: #354f52;
+    background-color: mediumseagreen;
+    font-family: 'Times New Roman', Times, serif;
+}
+button:hover {
+    color:#9e2a2b;
+    background-color: darkblue;
+}
+p{
+    
+}
