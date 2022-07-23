@@ -1,0 +1,36 @@
+#bigboy {
+    font-family: 'Prata', serif;
+    color:#B8C0FF;
+}
+
+h1 {
+    font-family: 'Prata', serif;
+    color:#111958;
+}
+
+#navbar ul {
+   display: inline;
+   background-color: #E7C6FF;
+}
+
+nav {
+    background: #E7C6FF;
+    text-align: center;
+}
+
+body {
+    font-family:'Prata', serif;
+    background-color:#FFD6FF ;
+   
+
+}
+#blogpost{
+    text-decoration: underline;
+}
+.makeitbig {
+    font-size: 1.5em;
+    font-style: italic;
+}
+p.space {
+    text-align: center;
+}
