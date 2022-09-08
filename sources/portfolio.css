@@ -1,29 +1,63 @@
 #bigboy {
     font-family: 'Prata', serif;
-    color:#B8C0FF;
+    color:white;
 }
-
+#bigboy:hover {
+    font-family: 'Prata', serif;
+    color:#C8B6FF;
+}
 h1 {
     font-family: 'Prata', serif;
     color:#111958;
 }
 
-#navbar ul {
+/* #navbar ul {
    display: inline;
    background-color: #E7C6FF;
 }
-
+original code for my navbar
 nav {
     background: #E7C6FF;
     text-align: center;
-}
+} */ 
 
-body {
+html {
+    background:#FFD6FF;
     font-family:'Prata', serif;
-    background-color:#FFD6FF ;
-   
-
+    
 }
+
+main {
+    background:#FFD6FF;
+    font-family:'Prata', serif;
+    
+}
+body {
+    background:#FFD6FF;
+    font-family:'Prata', serif;
+}
+#mainnavbar .navbar-brand {
+    color:white;
+    font-size: 2.5rem;
+}
+
+#mainnavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+    
+}
+#mainnavbar .nav-link {
+    color: white;
+}
+#mainnavbar .nav-link:hover {
+    color: #C8B6FF;
+  
+}
+.navbar.scrolled {
+    background: black ;
+    transition: background 200ms;
+}
+
 #blogpost{
     text-decoration: underline;
 }
@@ -33,4 +67,8 @@ body {
 }
 p.space {
     text-align: center;
+}
+p.maininfo{
+    color: #C8B6FF;
+    font-size: 2.5rem;
 }

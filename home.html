@@ -6,10 +6,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="sources/portfolio.css" >
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Linking bootstrap stylesheet to create a navbar I have created during a code along -->
     </head>
     <main>
         <body>
-            <section>
+            <!-- <section>
                 <nav id="navbar">
                     <ul>
                         <ul>
@@ -26,26 +28,70 @@
                         </ul>
                     </ul>
                 </nav>
-            </section>
-            
-            <section>
-               <h1 id="bigboy">
-                Alina Andino &trade;
-               </h1>
-            </section>
-            <section>
-                <p>
-                    Hey there! Born and raised Latina Chicagoan with a love of color palettes!
+                This is the original code I had written up.^^ It was good but I wanted
+                  to use what I had learned from a web development course to create this navbar.
+                  I rewatched the code along while weaving in my new ideas for the navbar.
+
+            <!-- </section> --> 
+
+
+            <nav id="mainnavbar" class="navbar navbar-dark navbar-expand-md py-0 margin-top">
+                <a href="#" class="navbar-brand">&#9729;</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navlinks" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navlinks">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="aboutme.html" class="nav-link">ABOUT ME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">CONTACT ME</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+          <section class="container-fluid px-0">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div>
+                        <h1 class="text-center d-none d-lg-block" id="bigboy">Welcome to my world!</h1>
+                    </div>
+                    </div>
+                       <div class="col-lg-6">
+                        <img class="img-fluid" src="sources/images/alina.jpg"alt="">
+                       </div>
+                    </div>
+          </section>
+                <p class="maininfo">
+                 Born and raised Latina Chicagoan with a love of color palettes!
                 </p>
-            </section>
             <section>
-                <img class="alina" src="sources/images/alina.jpg" >
-            </section>
-            <section>
-                <p>
+                <p class="maininfo">
                     Self taught Front End Developer & Designer
                 </p>
             </section>
+        <script>
+            $(function () {
+                $(document).scroll(function () {
+                    var $nav = $("#mainnavbar");
+                    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+                })
+            })
+        </script>
+        <!-- This is javascript I learned from the course. I am still learning the basics -->
+
         
         </body>
     </main>
