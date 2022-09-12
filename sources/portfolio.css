@@ -2,13 +2,14 @@
     font-family: 'Prata', serif;
     color:white;
 }
-#bigboy:hover {
+/* #bigboy:hover {
     font-family: 'Prata', serif;
-    color:#C8B6FF;
-}
+    color:#524f90; */
+/* } */
 h1 {
     font-family: 'Prata', serif;
     color:#111958;
+    
 }
 
 /* #navbar ul {
@@ -22,19 +23,19 @@ nav {
 } */ 
 
 html {
-    background:#FFD6FF;
+    background: #d8d7f7;
     font-family:'Prata', serif;
     
 }
 
 main {
-    background:#FFD6FF;
+    background:#d8d7f7;
     font-family:'Prata', serif;
-    
 }
 body {
     background:#FFD6FF;
     font-family:'Prata', serif;
+  
 }
 #mainnavbar .navbar-brand {
     color:white;
@@ -50,7 +51,7 @@ body {
     color: white;
 }
 #mainnavbar .nav-link:hover {
-    color: #C8B6FF;
+    color: #6768AB;
   
 }
 .navbar.scrolled {
@@ -69,6 +70,161 @@ p.space {
     text-align: center;
 }
 p.maininfo{
-    color: #C8B6FF;
+    color: #18237c;
     font-size: 2.5rem;
+    text-align: center;
+    padding-top:20px;
+}
+
+ #techskills{
+    color:#18237c;
+    text-align: center;
+}
+.whyme{
+    color:#523f90;
+    text-align: center;
+}
+.whatnow{
+    text-align: center;
+    color: #18237c;
+    padding-top: 2%;
+}
+.doingnow{
+    text-align: center;
+    color:#18237c
+}
+.iam{
+    color:#523f90;
+    text-align: center;
+   
+}
+.amplify{
+    color:#80ACED;
+    font-size: xx-large;
+    text-align: center;
+    padding: 2px;
+}
+#aridantequote{
+    color:#6768AB;
+    text-align: center;
+  
+}
+#myskills{
+    color:#18237c;
+    text-align: center;
+    margin-right: 3%;
+}
+#projecttitle{
+    color:#18237c;
+}
+.whatis{
+    color: #523f90;
+    text-align: center;
+}
+.whyknow{
+    color:#80ACED;
+    text-align: center;
+}
+.blogtitle{
+    color:#18237c;
+}
+.chaargimages img{
+    /* display:flex; */
+    display: inline;
+    width:30%;
+    padding: 20px;
+    margin-right:5%;
+    
+    }
+.chaargimages{
+    background-color:#523f90;
+    display:flex;
+    width:100%;
+    height:100%
+}
+
+.container{
+    width: 20%;
+    margin-bottom:30px;
+    height:100%;
+}
+.container img{
+    width:50%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display:flex;
+    float:right;
+
+}
+/* p .container{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+} 
+I have zero idea how to align my paragraphs to center*/
+
+ #chaargsolo{
+    width:30%;
+    padding:0%;
+    
+}
+#chaargsolo img{
+    margin:10px;
+    padding: 20px;
+    width: 60%;
+}
+#sappexec{
+    width:60%;
+    padding:20px;
+
+}
+#alinabookstagram{
+    width:60%;
+    padding-top:20px;
+}
+.bookclubimages{
+    background-color:#523f90;
+    display:flex;
+    width:100%;
+    height:100%
+  
+}
+.bookclubimages img{
+    display: inline;
+    width:30%;
+    padding: 20px;
+    margin-right:5%;
+    
+}
+.nwm20images{
+    background-color:#523f90;
+    display:flex;
+    width:100%;
+    height:100%
+  
+}
+.nwm20images img{
+    display: inline;
+    width:30%;
+    padding: 20px;
+    margin-right:5%;
+    
+}
+.sappimages{
+    background-color:#523f90;
+    display:flex;
+    width:100%;
+    height:100%
+  
+}
+.sappimages img{
+    display: inline;
+    width:30%;
+    padding: 20px;
+    margin-right:5%;
+    
+}
+.centerexample{
+    text-align: center;
+    padding:20px;
 }
