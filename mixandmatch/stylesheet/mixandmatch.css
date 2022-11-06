@@ -1,0 +1,235 @@
+/* @font-face{
+    font-family: "Shalimar", sans-serif;
+    /* src: url()/* he linked a url but i linked google fonts on the html doc
+
+} */
+/* @font-face{
+    font-family: "Shalimar", sans-serif;
+    /* src: url()/* he linked another url but i linked google fonts on the html doc
+unsure if i need to do this. will circle back
+} */
+*{
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100vh;
+     /* cursor: url () so he actually does a custom cursor but I think I'll pass on that one. DOn't want to mess with anyone's cursor ; */
+
+    } 
+
+
+body{
+    margin: 0;
+    background: radial-gradient(red, #12141f);
+}
+
+.page-title{
+    color: #e9d101;
+    font-family: "Shalimar", sans-serif;
+    font-weight: normal;
+    text-align:center;
+    font-size: 6em;
+    text-shadow: 0px 0px 5px #000000;
+}
+
+.game-info-container{
+    grid-column: 1 /-1;
+    display: flex;
+    justify-content: space-between;
+}
+.game-info{
+    color:#dde24a;
+    font-size: 4em;
+    font-family: "Dancing Script", sans-serif;
+    text-shadow: 0px 0px 5px #000000;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+    perspective: 500px;
+}
+
+.card{
+    position: relative;
+    height: 175px;
+    width: 125px;
+}
+
+/* .card:hover{
+    cursor: url() once again I am not using a special cursor so i will cut this part out */
+/* } */
+
+.card-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    transition: transform 500ms ease-in-out;
+}
+
+ .card.visible .card-back{
+    transform: rotateY(-180deg);
+} 
+
+.card.visible  .card-front{
+    transform:rotateY(0);
+} 
+
+.card.matched .card-value{
+    animation: dance 1s linear infinite 500ms;
+}
+
+.overlay-text{
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color:#e9d101;
+    font-family: "Dancing Script", sans-serif;
+}
+
+.overlay-text-small{
+    font-size: .3em;
+}
+
+.overlay-text.visible {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow{
+    from{
+        background-color: rgba(0,0,0,0);
+        font-size: 0;
+    }
+    to{
+        background-color:rgba(0,0,0,.8) ;
+        font-size: 10em;
+
+    }
+}
+
+
+@keyframes dance{
+    0%, 100%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    75%{
+        transform: rotate(30deg);
+    }
+}
+.card-back{
+    background-color: #12141f;
+    border-color:#dde24a;
+}
+
+.card-front{
+    background-color: #9ea7d7;
+    border-color: #474b60;
+    transform:rotateY(180deg);
+}
+
+.card-value{
+    transition: transform 100ms ease-in-out;
+    transform: scale(.9);
+}
+.card-front:hover .card-value{
+    transform:scale(1);
+}
+.svg-back {
+    color: #FFFFFF;
+    width: 47px;
+    height: 47px;
+    transition: width 100ms ease-in-out, height 100ms ease-in-out;
+   
+}
+.svg-front {
+    color: #12141f;
+    width: 47px;
+    height: 47px;
+    transition: width 100ms ease-in-out, height 100ms ease-in-out;
+   
+}
+.card-face:hover .star{
+    width: 52px;
+    height: 52px;
+}
+
+.star{
+    position: absolute;
+    /* width: 47px;
+    height: 47px; don't need this height and width since I have it in the svg-back */ 
+}
+
+.star-top-left{
+    /* transform: rotate(270deg); */
+    top:0;
+    left: 0;
+    padding-top:10px;
+}
+
+.star-top-right{
+    /* transform: rotate(270deg); */
+    top:0;
+    right: 0;
+    padding-top:10px;
+}
+
+.star-bottom-left{
+    /* transform: rotate(270deg); */
+    bottom:0;
+    left: 0;
+    padding-bottom:10px;
+}
+
+.star-bottom-right{
+    /* transform: rotate(270deg); */
+    bottom:0;
+    right: 0;
+    padding-bottom:10px;
+}
+
+.rose{
+    align-self:flex-start;
+    transform:translateY(2.5px);
+    transform:translateX(5px);
+    height: 100%;
+    transition: transform 100ms ease-in-out;
+
+}
+
+.card-back:hover .rose{
+    transform: translateY(0)
+}
+
+
+@media (max-width: 600px){
+    .game-container{
+        grid-template-columns:repeat(2,auto);
+    }
+    .game-info-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
