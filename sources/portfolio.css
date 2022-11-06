@@ -1,57 +1,45 @@
-#bigboy {
-    font-family: 'Prata', serif;
-    color:white;
+.bigboy {
+     color: #18237c;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top:20px;
 }
-/* #bigboy:hover {
-    font-family: 'Prata', serif;
-    color:#524f90; */
-/* } */
-h1 {
+.mediumboy{
+    color:#18237c;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;;
+}
+
+.mediumboy:hover{
+    color: #a3a1df;
+    text-shadow: 0px 0px 1px black;
+}
+h1, h2 {
     font-family: 'Prata', serif;
     color:#111958;
     
 }
-
-/* #navbar ul {
-   display: inline;
-   background-color: #E7C6FF;
-}
-original code for my navbar
-nav {
-    background: #E7C6FF;
-    text-align: center;
-} */ 
-
-html {
-    background: #d8d7f7;
+html, body, main{
+    background: radial-gradient( #f7d8d7,#d8d7f7);
     font-family:'Prata', serif;
     
-}
-
-main {
-    background:#d8d7f7;
-    font-family:'Prata', serif;
-}
-body {
-    background:#FFD6FF;
-    font-family:'Prata', serif;
-  
-}
-#mainnavbar .navbar-brand {
-    color:white;
-    font-size: 2.5rem;
 }
 
 #mainnavbar {
     font-size: 1.5rem;
     font-weight: 100;
+    background-color: #523f90;
+    opacity: .6;
+    margin-bottom: 25px;
     
 }
 #mainnavbar .nav-link {
     color: white;
+    margin-top: 20px;
 }
 #mainnavbar .nav-link:hover {
-    color: #6768AB;
+    color: #111958;
   
 }
 .navbar.scrolled {
@@ -59,30 +47,31 @@ body {
     transition: background 200ms;
 }
 
-#blogpost{
-    text-decoration: underline;
-}
+
 .makeitbig {
     font-size: 1.5em;
     font-style: italic;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 p.space {
     text-align: center;
 }
-p.maininfo{
+#latine{
     color: #18237c;
     font-size: 2.5rem;
     text-align: center;
     padding-top:20px;
 }
 
- #techskills{
+ h2{
     color:#18237c;
     text-align: center;
 }
 .whyme{
     color:#523f90;
     text-align: center;
+    padding-top: 20px;
 }
 .whatnow{
     text-align: center;
@@ -91,42 +80,60 @@ p.maininfo{
 }
 .doingnow{
     text-align: center;
-    color:#18237c
+    color:#18237c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .iam{
     color:#523f90;
     text-align: center;
    
 }
-.amplify{
-    color:#80ACED;
+.amplify {
+    color:#111958;
     font-size: xx-large;
     text-align: center;
-    padding: 2px;
+    padding-top: 20px;;
+
 }
-#aridantequote{
-    color:#6768AB;
+#aridantequote {
+    color: #18237c;
+    font-size: 2.5rem;
     text-align: center;
-  
+    padding-top:20px;
 }
-#myskills{
-    color:#18237c;
+.adjective {
+    color:white;
     text-align: center;
     margin-right: 3%;
 }
-#projecttitle{
-    color:#18237c;
+.techskills {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+.techskills-container{
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.bluesquare {
+    background-color:#111958;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
 }
 .whatis{
     color: #523f90;
     text-align: center;
+    padding-bottom: 10px;
 }
 .whyknow{
     color:#80ACED;
     text-align: center;
-}
-.blogtitle{
-    color:#18237c;
 }
 .chaargimages img{
     /* display:flex; */
@@ -137,7 +144,7 @@ p.maininfo{
     
     }
 .chaargimages{
-    background-color:#523f90;
+    /* background-color:#523f90; */
     display:flex;
     width:100%;
     height:100%
@@ -156,12 +163,12 @@ p.maininfo{
     float:right;
 
 }
-/* p .container{
-    display:flex;
-    align-items: center;
-    justify-content:center;
-} 
-I have zero idea how to align my paragraphs to center*/
+
+.alinaselfie{
+    width:60%;
+    padding: 20px;
+    display: flex;
+}
 
  #chaargsolo{
     width:30%;
@@ -183,10 +190,11 @@ I have zero idea how to align my paragraphs to center*/
     padding-top:20px;
 }
 .bookclubimages{
-    background-color:#523f90;
+    /* background-color:#523f90; decided to use a gradient for my whole background instead */
     display:flex;
     width:100%;
     height:100%
+
   
 }
 .bookclubimages img{
@@ -197,7 +205,7 @@ I have zero idea how to align my paragraphs to center*/
     
 }
 .nwm20images{
-    background-color:#523f90;
+    /* background-color:#523f90; */
     display:flex;
     width:100%;
     height:100%
@@ -211,7 +219,7 @@ I have zero idea how to align my paragraphs to center*/
     
 }
 .sappimages{
-    background-color:#523f90;
+    /* background-color:#523f90; */
     display:flex;
     width:100%;
     height:100%
@@ -228,3 +236,157 @@ I have zero idea how to align my paragraphs to center*/
     text-align: center;
     padding:20px;
 }
+
+#maluma{
+    display:flex;
+    width:30%;
+    height:40%;
+    border-radius: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kirby{
+    display:flex;
+    width:20%;
+    height:40%;
+    border-radius: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#alinaratings{
+    padding-top:20px;
+    text-align: center;
+    color:#523f90;
+}
+
+#futureemployer{
+    display:flex;
+    width:30%;
+    height:50%;
+    border-radius: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alinareview{
+    color:#111958;
+    text-align:center;
+    padding-top: 20px;
+}
+.skillset{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 15%;
+    transition: ease-in 5s;
+
+}
+
+.purplebubble{
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    width: 15rem;
+    height: 15rem;
+    background: #523f90;
+    border-radius: 50%;
+    justify-items: center;
+
+}
+
+.skillset-container{
+    display: inline-flex;
+}
+
+ .purplebubble img {
+    width: 80%;
+    height: 80%;
+    margin-top: 0;
+}
+.purplebubble span {
+    margin-top: 33%;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+#navlinks ul {
+    list-style: none;
+    background: inherit;
+    
+}
+
+#navlinks ul li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+#navlinks ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#navlinks ul li ul.dropdown li {
+    display: block;
+    border: 1px solid #111958;
+    font-size: 20px;
+}
+
+#navlinks ul li ul.dropdown {
+    width: 100%;
+    background-color: #523f90;
+
+    position: absolute;
+    display: none;
+    z-index: 999;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+}
+
+
+#navlinks ul li:hover ul.dropdown {
+    display: block;
+    border: 1px solid #111958;
+}
+
+#bigarrow {
+    font-size: 12px;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+}
+
+/* these are all my uh oh's that I took out of my css/*/
+/* main {
+    background:#d8d7f7;
+    font-family:'Prata', serif;
+}
+body {
+    background:#FFD6FF;
+    font-family:'Prata', serif;
+  
+} */
+/* #mainnavbar .navbar-brand { originally a cloud but i decided to take this out
+    color:white;
+    font-size: 2.5rem;
+} */
+/* p .container{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+} 
+I have zero idea how to align my paragraphs to center*/
+/* #navbar ul {
+   display: inline;
+   background-color: #E7C6FF;
+}
+original code for my navbar
+nav {
+    background: #E7C6FF;
+    text-align: center;
+} */ 

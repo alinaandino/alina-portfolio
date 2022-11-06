@@ -10,26 +10,8 @@
     </head>
     <main>
     <body>
-            <!-- <section>
-                <nav id="navbar">
-                    <ul>
-                        <ul>
-                            <a href="home.html">Home</a>
-                        </ul>
-                        <ul>
-                            <a href="aboutme.html">About Me</a>
-                        </ul>
-                        <ul>
-                            <a href="blog.html">Blog</a>
-                        </ul>
-                        <ul>
-                            <a href="contact.html">Contact Me!</a>
-                        </ul>
-                    </ul>
-                </nav>
-            </section> -->
             <nav id="mainnavbar" class="navbar navbar-dark navbar-expand-md py-0 margin-top">
-                <a href="#" class="navbar-brand">&#9729;</a>
+                <!-- <a href="#" class="navbar-brand"></a> -->
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navlinks" aria-label="Toggle Navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,7 +27,11 @@
                             <a href="blog.html" class="nav-link">BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a href="projects.html" class="nav-link">PROJECTS</a>
+                            <a href="projects.html" class="nav-link">PROJECTS<span id="bigarrow">▼</span></a>
+                            <ul class="dropdown">
+                                <li><a href="codealong.html">Code Along Projects</a></li>
+                                <li><a href="socialmedia.html">Social Media</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">CONTACT ME</a>
@@ -53,29 +39,35 @@
                     </ul>
                 </div>
             </nav>
-                    <h1 id="aridantequote"> "It made me more aware that there was something inside of me that mattered"</h1>
-        <section>
-            <!-- I could insert an image? -->
-            <br>
-            <p class="amplify">
-                I want to amplify the voices of 
-                those who don't always have the platform or safe space to communicate.
-                In my future career, I want to work with an organization and be a part of a community
-                that cares about its people, actively listens, and communicates collaboratively
-                to make their mission and community stronger.
-            </p>
-        </section>
-        <section>
-            <p>
-                <h2 id="techskills"> Technical Skills</h2>
-                <ul id="myskills">
-                    <ul> HTML 5, CSS, JavaScript</ul>
-                    <ul> Canva</ul>
-                    <ul> Email + Phone Communication</ul>
-                    <ul> Community Management</ul>
-                    <ul>Loomly</ul>
-                </ul>
-            </p>
+        <h2 >Technical Skills</h2>
+        <section class="techskills">
+            <div class="techskills-container">
+                <div class="bluesquare">
+                    <p class="adjective">HTML5, CSS, JavaScript</p>
+                </div>
+            </div>
+            <div class="techskills-container">
+                <div class="bluesquare">
+                    <p class="adjective">Canva</p>
+                </div>
+            </div>
+            </section>
+            <section class="techskills">
+            <div class="techskills-container">
+                <div class="bluesquare">
+                    <p class="adjective">Email & Phone Communication</p>
+                </div>
+            </div>
+            <div class="techskills-container">
+                <div class="bluesquare">
+                    <p class="adjective">Community Outreach & Social Media Engagement</p>
+                </div>
+            </div>
+            <div class="techskills-container">
+                <div class="bluesquare">
+                    <p class="adjective">Loomly & Later</p>
+                </div>
+            </div>
         </section>
         <section>
             <h2 class="whyme"> Here's all you need to know about why 
@@ -104,8 +96,37 @@
                    
             </p>
         </section>
+        <section class="testimonials">
+            <h2 id="alinaratings">Testimonials</h2>
+            <img id="maluma" src="sources/images/maluma1.jpg" alt="picture of isaiah, alina's boyfriend">
+            <p class="alinareview">"Alina is the best partner I could ever have. I'm actually the one who got her into web development. I love her. 5/5 stars -Isaiah Perez"</p>
+            <img id="kirby" src="sources/images/kirby1.jpg" alt="alina's dog kirby">
+            <p class="alinareview">"Alina is the greatest mom I could ever have. Could use more pets though. 4/5 stars -Kirby Andino"</p>
+            <img id="futureemployer" src="sources/images/futureemployer.jpg" alt="stock photo of future employer">
+            <p class="alinareview">"So glad to have Alina on my staff. She is creative, collaborative, motivated, and a great asset to our team 6/5 stars. -Future Employer"</p>
+        </section>
 
+         <p class="amplify">
+                I want to amplify the voices of 
+                those who don't always have the platform or safe space to communicate.
+                In my future career, I want to work with an organization and be a part of a community
+                that cares about its people, actively listens, and communicates collaboratively
+                to make their mission and community stronger.
+            </p>
 
     </body>
 </main>
 </html>
+
+  <!-- all my uh oh's will be at the bottom <div class="container">
+            <p>
+                <h2 id="techskills"> Technical Skills</h2>
+                <ul class="myskills">
+                    <ul class="skill-boxes"> HTML 5, CSS, JavaScript</ul>
+                    <ul class="skill-boxes"> Canva</ul>
+                    <ul class="skill-boxes"> Email + Phone Communication</ul>
+                    <ul class="skill-boxes"> Community Management</ul>
+                    <ul class="skill-boxes">Loomly</ul>
+                </ul>
+            </p>
+        </div> -->
