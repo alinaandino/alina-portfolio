@@ -4,14 +4,14 @@
     text-align: center;
     padding-top:20px;
 }
-.mediumboy{
+.mediumboy {
     color:#18237c;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;;
 }
 
-.mediumboy:hover{
+.mediumboy:hover{ 
     color: #a3a1df;
     text-shadow: 0px 0px 1px black;
 }
@@ -20,7 +20,7 @@ h1, h2 {
     color:#111958;
     
 }
-html, body, main{
+html, body, main {
     background: radial-gradient( #f7d8d7,#d8d7f7);
     font-family:'Prata', serif;
     
@@ -57,35 +57,35 @@ html, body, main{
 p.space {
     text-align: center;
 }
-#latine{
+#latine {
     color: #18237c;
     font-size: 2.5rem;
     text-align: center;
     padding-top:20px;
 }
 
- h2{
+ h2 {
     color:#18237c;
     text-align: center;
 }
-.whyme{
+.whyme {
     color:#523f90;
     text-align: center;
     padding-top: 20px;
 }
-.whatnow{
+.whatnow {
     text-align: center;
     color: #18237c;
     padding-top: 2%;
 }
-.doingnow{
+.doingnow {
     text-align: center;
     color:#18237c;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.iam{
+.iam {
     color:#523f90;
     text-align: center;
    
@@ -114,7 +114,7 @@ p.space {
     padding-bottom: 20px;
 
 }
-.techskills-container{
+.techskills-container {
   padding-left: 20px;
   padding-top: 10px;
 }
@@ -126,36 +126,36 @@ p.space {
     width: 8rem;
     height: 8rem;
 }
-.whatis{
+.whatis {
     color: #523f90;
     text-align: center;
     padding-bottom: 10px;
 }
-.whyknow{
+.what-else {
     color:#80ACED;
     text-align: center;
 }
-.chaargimages img{
-    /* display:flex; */
-    display: inline;
-    width:30%;
-    padding: 20px;
-    margin-right:5%;
-    
-    }
-.chaargimages{
+
+.image-examples {
     /* background-color:#523f90; */
     display:flex;
     width:100%;
     height:100%
 }
 
-.container{
+.image-examples img {
+    display: inline;
+    width:30%;
+    padding: 20px;
+    margin-right:5%;
+    
+}
+.container {
     width: 20%;
     margin-bottom:30px;
     height:100%;
 }
-.container img{
+.container img {
     width:50%;
     margin-left: 50px;
     margin-bottom: 20px;
@@ -164,80 +164,24 @@ p.space {
 
 }
 
-.alinaselfie{
+.alinaselfie {
     width:60%;
     padding: 20px;
     display: flex;
 }
 
- #chaargsolo{
-    width:30%;
-    padding:0%;
-    
-}
-#chaargsolo img{
+.solo-pics {
     margin:10px;
     padding: 20px;
     width: 60%;
 }
-#sappexec{
-    width:60%;
-    padding:20px;
 
-}
-#alinabookstagram{
-    width:60%;
-    padding-top:20px;
-}
-.bookclubimages{
-    /* background-color:#523f90; decided to use a gradient for my whole background instead */
-    display:flex;
-    width:100%;
-    height:100%
-
-  
-}
-.bookclubimages img{
-    display: inline;
-    width:30%;
-    padding: 20px;
-    margin-right:5%;
-    
-}
-.nwm20images{
-    /* background-color:#523f90; */
-    display:flex;
-    width:100%;
-    height:100%
-  
-}
-.nwm20images img{
-    display: inline;
-    width:30%;
-    padding: 20px;
-    margin-right:5%;
-    
-}
-.sappimages{
-    /* background-color:#523f90; */
-    display:flex;
-    width:100%;
-    height:100%
-  
-}
-.sappimages img{
-    display: inline;
-    width:30%;
-    padding: 20px;
-    margin-right:5%;
-    
-}
-.centerexample{
+.centerexample {
     text-align: center;
     padding:20px;
 }
 
-#maluma{
+#maluma {
     display:flex;
     width:30%;
     height:40%;
@@ -246,7 +190,7 @@ p.space {
     margin-right: auto;
 }
 
-#kirby{
+#kirby {
     display:flex;
     width:20%;
     height:40%;
@@ -271,12 +215,12 @@ p.space {
     margin-right: auto;
 }
 
-.alinareview{
+.alinareview {
     color:#111958;
     text-align:center;
     padding-top: 20px;
 }
-.skillset{
+.skillset {
     display: flex;
     justify-content: space-between;
     margin: 25px 15%;
@@ -284,7 +228,7 @@ p.space {
 
 }
 
-.purplebubble{
+.purplebubble {
     display: grid;
     justify-content: center;
     align-items: start;
@@ -296,7 +240,7 @@ p.space {
 
 }
 
-.skillset-container{
+.skillset-container {
     display: inline-flex;
 }
 
@@ -359,6 +303,45 @@ p.space {
     vertical-align: middle;
     text-align: center;
     margin: auto;
+}
+
+
+.grid-container {
+    display: inline-grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+}
+
+.grid-item {
+    display: grid;
+    border: 1px solid rgba(17,25,88, .6);
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+
+}
+.grid-links {
+    /* padding-bottom: 20px; */
+    font-size: 30px;
+}
+
+.grid-info {
+    text-align: center;
+    color: #111958;
+    font-size: 15px;
+
+}
+
+.code-along-images {
+    height: 60vh;
+    width: 100%;
+    
 }
 
 /* these are all my uh oh's that I took out of my css/*/
