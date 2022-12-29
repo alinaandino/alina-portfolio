@@ -9,14 +9,13 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <!-- Linking bootstrap stylesheet to create a navbar I have created during a code along -->
     </head>
-    <main>
-        <body>
-
-            <nav id="mainnavbar" class="navbar navbar-dark navbar-expand-md py-0 margin-top">
-                <!-- <a href="#" class="navbar-brand">&#9729; taking this out, might use a different icon later</a> -->
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navlinks" aria-label="Toggle Navigation">
+<main>
+    <body>
+         <nav id="mainnavbar" class="navbar navbar-dark navbar-expand-md py-0 margin-top">
+         <!-- <a href="#" class="navbar-brand">&#9729; taking this out, might use a different icon later</a> -->
+             <button class="navbar-toggler" data-toggle="collapse" data-target="#navlinks" aria-label="Toggle Navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+            </button>
                 <div class="collapse navbar-collapse" id="navlinks">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -30,9 +29,9 @@
                         </li>
                         <li class="nav-item">
                             <a href="projects.html" class="nav-link">PROJECTS<span id="bigarrow">▼</span></a>
-                            <ul class="dropdown">
-                                <li><a href="codealong.html">Code Along Projects</a></li>
-                                <li><a href="socialmedia.html">Social Media</a></li>
+                                <ul class="dropdown">
+                                    <li><a href="codealong.html">Code Along Projects</a></li>
+                                    <li><a href="socialmedia.html">Social Media</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -41,57 +40,50 @@
                     </ul>
                 </div>
             </nav>
-          <section class="container-fluid px-0">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div> <!-- figure out what the h1 classes are. you gotta simplify this-->
-                        <h1 class="bigboy">Self taught Front End Web Developer & Designer</h1>
-                        <h1 class="bigboy">Born and raised Latine Chicagoan with a love of color palettes!</h1>
-                        <h1 class="bigboy">"It made me more aware that there was something inside of me that mattered"</h1>
-                    </div>
-                    </div>
-                       <div class="col-lg-6">
-                        <!-- <img class="img-fluid"> -->
-                          <img class="alinaselfie" src="sources/images/alinabutterfly.jpg" alt="photo of alina" >
-                       </div>
-                    </div>
-          </section>
-
-            <section class="skillset">
-                <span class="skillset-container">
-                    <span class="purplebubble">
-                        <span class="adjective">Passionate</span>
-                        <img src="sources/images/noun-software-engineer-2909346.svg" alt="software engineer icon">
-                    </span>
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div> <!-- figure out what the h1 classes are. you gotta simplify this-->
+                    <h1 class="bigboy">Self taught Front End Web Developer & Designer</h1>
+                    <h1 class="bigboy">Born and raised Latine Chicagoan with a love of color palettes!</h1>
+                    <h1 class="bigboy">"It made me more aware that there was something inside of me that mattered"</h1>
+                </div>
+            </div>
+            <div class="col-lg-6">
+            <!-- <img class="img-fluid"> -->
+                <img class="alinaselfie" src="sources/images/alinabutterfly.jpg" alt="photo of alina" >
+            </div>
+        </div>
+    </section>
+    <section class="skillset">
+        <span class="skillset-container">
+            <span class="purplebubble">
+                <span class="adjective">Passionate</span>
+                    <img src="sources/images/noun-software-engineer-2909346.svg" alt="software engineer icon">
+            </span>
+        </span>
+        <span class="skillset-container">
+            <span class="purplebubble">
+                <span class="adjective">Creative</span>
+                    <img src="sources/images/noun-entrepreneur-2909308.svg" alt="creative icon">
                 </span>
-                <span class="skillset-container">
-                    <span class="purplebubble">
-                        <span class="adjective">Creative</span>
-                        <img src="sources/images/noun-entrepreneur-2909308.svg" alt="creative icon">
-                    </span>
-                </span>
-                <span class="skillset-container">
-                    <span class="purplebubble">
-                        <span class="adjective">Resilient</span>
-                        <img src="sources/images/noun-empower-2909363.svg" alt="empower icon">
-                    </span>
-                </span>
-            </section>
-
-
-
-
-        <script>
+            </span>
+        <span class="skillset-container">
+            <span class="purplebubble">
+                <span class="adjective">Resilient</span>
+                    <img src="sources/images/noun-empower-2909363.svg" alt="empower icon">
+            </span>
+        </span>
+    </section>
+<script>
             $(function () {
                 $(document).scroll(function () {
                     var $nav = $("#mainnavbar");
                     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
                 })
             })
-        </script>
+</script>
         <!-- This is javascript I learned from the course. I am still learning the basics -->
-
-        
         </body>
     </main>
     

@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Quicksand:wght@300;400;500;600&display=swap'); /* not familiar with this documentation, new concept for me*/
+:root {
+    --btn-color: #FFE6A7;
+    --about-sec: #6F1D1B ;
+    }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Prata', serif;
+    transition: 0.5s;
+    text-transform: capitalize;
+
+}
+
+html {
+    font-size: 65%;
+    scroll-behavior: smooth; /*my scroll behavior isn't smooth?? */
+
+}
+
+.header {
+    padding: 1rem 7%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #6F1D1B;
+}
+
+.beanslogo img {
+    width: 60px;
+/*need to use inkscape to change the color of this image*/
+}
+
+.navbar a {
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.navbar a:hover {
+    color: var(--btn-color);
+}
+
+.icons div {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    display: none;
+}
+
+.icons div:hover {
+    cursor: pointer;
+
+}
+
+.icons a {
+    color: rgb(255, 255, 255);
+    padding: 0.6rem 1.5rem;
+    border: 1px solid #FFE6A7;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+    background: var(--btn-color);
+    color: #6F1D1B;
+   
+}
+/*use the contact hover button for your own website*/
+
+.navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+}
+
+
+/*design for home section */
+
+.home {
+    padding: 1rem 7%;
+    background: url(./sources/images/coffeebackground50.png), rgb(67,40, 24);
+    height: 100vh;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 100px;
+}
+
+.home-inner-content {
+    flex: 1 1 45rem;
+}
+
+.home-image img {
+    width: 100%;
+
+}
+
+.home-text-content {
+    padding: 0 10rem;
+}
+
+.home-text-content h1 {
+    font-size: 45px;
+    color:#FFE6A7;
+}
+
+.home-text-content p {
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        line-height: 1.7rem;
+}
+
+.home-text-content a {
+    color: rgb(255, 255, 255);
+    padding: 0.6rem 1.5rem;
+    border: 1px solid #FFE6A7;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.home-text-content a:hover {
+    transform: scale(1.1);
+    background: var(--btn-color);
+    color: #6F1D1B;
+}  
+
+.about {
+    padding: 1rem 7%;
+    background: var(--about-sec);
+
+}
+
+.main-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.about-content {
+    flex: 1 1 45rem;
+}
+
+.about-inner-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-text-content{
+    padding: 0 4rem;
+}
+
+.about-text-content h1{
+    color:#FFE6A7;
+    font-size: 40px;
+}
+
+.about-text-content p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+
+.quality {
+    padding: 4rem 7%;
+    background-image: linear-gradient(180deg, #FFE6A7, #BB9457, #99582A, #432818);
+}
+
+.main-quality {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-inner-quality {
+    flex: 1 1 45rem;
+
+}
+
+.quality-content {
+    display: block;
+    padding: 0 4rem;
+    text-align: center;
+}
+
+.quality-content h1 {
+    color: #6F1D1B;
+    font-size: 40px;
+}
+
+.quality-content p {
+    color: var(--about-sec);
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+.resize-image img {
+    height: 600px;
+    width: 450px;
+}
+
+.resize-image img:hover{
+    opacity: 0.5;
+    transition: .5s;
+}
+/*weird space between images, around 35 minute mark . Have to go back and check */
+
+
+.hover-text{
+    color:antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding-right: 60px;
+
+}
+.resize-image img, .hover-text:hover{
+    color:#FFE6A7;
+}
+
+.gallery {
+    padding: 4rem 7%;
+    background: var(--about-sec);
+}
+
+.main-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.inner-gallery{
+    flex: 1 1 300px;
+    height: 30%;
+    
+}
+.quality-image {
+    width: 100%;
+} 
+
+.enjoy-our-food {
+    padding: 2rem 7%;
+        background: url(./sources/images/bread60.png), rgba(67,40,24);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.food-main-content{
+    width: 40%;
+    border: 4px solid white;
+    padding: 2rem;
+  
+}
+
+.food-main-content h1 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+.food-main-content p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 30px;
+}
+
+.our-menu-food {
+    padding: 2rem 7%;
+    background-color: var(--about-sec);
+}
+
+.our-menu-food h1 {
+    color: var(--btn-color);
+    font-size: 45px;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.main-menu-food {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.inner-menu-food {
+    flex: 1 1 300px;
+
+}
+
+.menu-food-content {
+    width: 100%;
+}
+
+.menu-food-content img {
+    width: 100%;
+}
+
+.menu-food-text {
+    padding: 2rem 2rem;
+}
+
+.menu-food-text h2 {
+    color: var(--btn-color);
+    font-size: 30px;
+}
+
+.menu-food-text p {
+    color: white;
+    font-size: 18px;
+    margin: 2rem 0;
+}
+
+/* .quality-image img {
+    width: 100%;
+} */ 
+/* I don't think lines 223-229 does anything. So I will comment them out for now */
+
+
+/* .about-content .about-inner-content img {
+    width: 100%;
+}  */
+/* I am not sure if this changes anything */
+
+#bigcoffee{
+    padding-top: 70px;
+    height: 120%;
+    width: 100%;
+}
+
+#fourcoffees{
+    width: 90%;
+    height: 90%;
+    padding-top: 20px;
+}
+#lotsofbeans {
+    height: 50%;
+    width: 50%;
+    align-content: center;
+   
+}
+
+.menu-food{
+    height: 300px;
+    width: 400px;
+}
+
+
+@media (max-width: 767px) {
+    .header {
+        padding: 2rem;
+    }
+    .icons div {
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 100%;
+        background-color: #BB9457; /*you might have to change this color later on. It's originally the button color but that's too light*/
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .navbar a {
+        display: block;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .home-text-content {
+        padding: 0 2rem;
+    }
+    .main-home{
+        padding: 2rem 0;
+    }
+    .home {
+        padding-top: 100px;
+    }
+    #fourcoffees {
+        width: 100%;
+        margin: 0;
+    } /*I am not sure if this changes anything^^ */
+
+    .food-main-content { 
+        width: 80%;
+        border: 4px solid white;
+        padding: 1rem;
+      
+    }
+}
+
